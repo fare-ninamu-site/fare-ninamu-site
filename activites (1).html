@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="yUZGcVzcAP79q_4F0i7ne71NCpnfJKC2E1W0jXTX2nQ" />
+  <title>Activités – Fare Ninamu</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f8fafa; margin: 0; padding: 0; }
+    header, footer { background-color: #014d4e; color: white; padding: 10px 20px; text-align: center; }
+    main { padding: 20px; max-width: 900px; margin: auto; }
+    h2 { color: #014d4e; }
+    .hidden { display: none; }
+    ul { list-style-type: none; padding-left: 0; }
+  </style>
+</head>
+<body>
+  <header>
+    <h1 class="lang-fr">Activités à Vairao</h1>
+    <h1 class="lang-en hidden">Activities in Vairao</h1>
+    <div class="language-switcher">
+      <button onclick="setLanguage('fr')">FR</button>
+      <button onclick="setLanguage('en')">EN</button>
+    </div>
+  </header>
+
+  <main>
+    <section>
+      <h2 class="lang-fr">🌿 Excursion sauvage à Te Pari</h2>
+      <h2 class="lang-en hidden">🌿 Wild excursion to Te Pari</h2>
+      <ul class="lang-fr">
+        <li>🛶 Trajet en bateau</li>
+        <li>🌊 Pause baignade dans le lagon turquoise</li>
+        <li>🍍 Pique-nique local inclus</li>
+        <li>📜 Partage de légendes avec un guide local</li>
+      </ul>
+      <ul class="lang-en hidden">
+        <li>🛶 Boat trip</li>
+        <li>🌊 Swimming stop in the turquoise lagoon</li>
+        <li>🍍 Local picnic included</li>
+        <li>📜 Sharing of legends with a local guide</li>
+      </ul>
+      <p><strong>Contact :</strong> +689 87 28 63 82 – tahitiboatexcursionandsurf@gmail.com</p>
+
+      <h2 class="lang-fr">🚤 Excursion avec Fifiri Boat</h2>
+      <h2 class="lang-en hidden">🚤 Trip with Fifiri Boat</h2>
+      <ul class="lang-fr">
+        <li>🔥 Bateau avec BBQ</li>
+        <li>🍍 Apportez vos ingrédients</li>
+        <li>✅ Confort pour famille ou amis</li>
+      </ul>
+      <ul class="lang-en hidden">
+        <li>🔥 BBQ boat ride</li>
+        <li>🍍 Bring your ingredients</li>
+        <li>✅ Comfortable for families and friends</li>
+      </ul>
+      <p><strong>Contact :</strong> +689 89 72 10 48 – villateraimoana@gmail.com</p>
+
+      <h2 class="lang-fr">🌊 Tahiti Iti Pearl Farm – Ferme Perlière de Teahupoo</h2>
+      <h2 class="lang-en hidden">🌊 Tahiti Iti Pearl Farm – Teahupoo Pearl Farm</h2>
+      <p class="lang-fr">Découvrez la culture de la perle noire à Teahupoo : visite de la ferme, cycle de vie de la perle, immersion dans la tradition polynésienne.</p>
+      <p class="lang-en hidden">Discover black pearl farming in Teahupoo: farm tour, pearl life cycle, immersion in Polynesian tradition.</p>
+      <p><strong>Contact :</strong> +689 89 54 45 44 – tahitiitipearlfarm@gmail.com</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Fare Ninamu - Vairao, Tahiti</p>
+  </footer>
+
+  <script>
+    function setLanguage(lang) {
+      document.querySelectorAll('.lang-fr').forEach(el => el.classList.toggle('hidden', lang !== 'fr'));
+      document.querySelectorAll('.lang-en').forEach(el => el.classList.toggle('hidden', lang !== 'en'));
+    }
+  </script>
+</body>
+</html>
