@@ -1,0 +1,71 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Activités - Fare Ninamu</title>
+  <style>
+    body { font-family: Arial, sans-serif; background-color: #f8fafa; margin: 0; padding: 20px; max-width: 900px; margin: auto; }
+    h2 { color: #014d4e; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <h1 class="lang-fr">🌴 Activités à proximité</h1>
+  <h1 class="lang-en hidden">🌴 Nearby Activities</h1>
+
+  <section class="lang-fr">
+    <h2>🌿 Excursion sauvage à Te Pari</h2>
+    <ul>
+      <li>🛶 Trajet en bateau</li>
+      <li>🌊 Pause baignade dans le lagon turquoise</li>
+      <li>🍍 Pique-nique local inclus</li>
+      <li>📜 Partage de légendes avec un guide local</li>
+    </ul>
+    <p><strong>Contact :</strong> +689 87 28 63 82 – tahitiboatexcursionandsurf@gmail.com</p>
+
+    <h2>🚤 Excursion avec Fifiri Boat</h2>
+    <ul>
+      <li>🔥 Bateau avec BBQ</li>
+      <li>🍍 Apportez vos ingrédients</li>
+      <li>✅ Confort pour famille ou amis</li>
+    </ul>
+    <p><strong>Contact :</strong> +689 89 72 10 48 – villateraimoana@gmail.com</p>
+
+    <h2>🌊 Tahiti Iti Pearl Farm – Ferme Perlière de Teahupoo</h2>
+    <p>Découvrez la culture de la perle noire à Teahupoo : visite de la ferme, cycle de vie de la perle, immersion dans la tradition polynésienne.</p>
+    <p><strong>Contact :</strong> +689 89 54 45 44 – tahitiitipearlfarm@gmail.com</p>
+  </section>
+
+  <section class="lang-en hidden">
+    <h2>🌿 Wild Excursion to Te Pari</h2>
+    <ul>
+      <li>🛶 Boat trip</li>
+      <li>🌊 Swimming break in the turquoise lagoon</li>
+      <li>🍍 Local picnic included</li>
+      <li>📜 Local legend sharing with guide</li>
+    </ul>
+    <p><strong>Contact:</strong> +689 87 28 63 82 – tahitiboatexcursionandsurf@gmail.com</p>
+
+    <h2>🚤 Excursion with Fifiri Boat</h2>
+    <ul>
+      <li>🔥 BBQ boat</li>
+      <li>🍍 Bring your ingredients</li>
+      <li>✅ Comfortable for family and friends</li>
+    </ul>
+    <p><strong>Contact:</strong> +689 89 72 10 48 – villateraimoana@gmail.com</p>
+
+    <h2>🌊 Tahiti Iti Pearl Farm – Teahupoo Pearl Farm</h2>
+    <p>Discover the culture of black pearls in Teahupoo: farm tour, pearl life cycle, immersion in Polynesian tradition.</p>
+    <p><strong>Contact:</strong> +689 89 54 45 44 – tahitiitipearlfarm@gmail.com</p>
+  </section>
+
+  <script>
+    function setLanguage(lang) {
+      document.querySelectorAll('.lang-fr').forEach(el => el.classList.toggle('hidden', lang !== 'fr'));
+      document.querySelectorAll('.lang-en').forEach(el => el.classList.toggle('hidden', lang !== 'en'));
+    }
+  </script>
+</body>
+</html>
