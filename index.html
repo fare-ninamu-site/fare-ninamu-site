@@ -1,97 +1,92 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Fare Ninamu - Vairao, Tahiti Iti</title>
-  <style>
-    body {
-      font-family: 'Arial', sans-serif;
-      margin: 0;
-      background: #e0f7f9;
-      color: #003c3c;
-    }
-    header {
-      background: #00bcd4;
-      padding: 40px 20px;
-      text-align: center;
-      color: white;
-    }
-    nav {
-      background: #0097a7;
-      display: flex;
-      justify-content: center;
-      padding: 10px;
-    }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
-    }
-    section {
-      padding: 40px 20px;
-      max-width: 1000px;
-      margin: auto;
-    }
-    h2 {
-      color: #006666;
-    }
-    footer {
-      background: #004d4d;
-      color: white;
-      text-align: center;
-      padding: 20px;
-    }
-    .contact-info {
-      font-size: 18px;
-      margin-top: 10px;
-    }
-  </style>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Fare Ninamu - Hébergement à Vairao, Tahiti Iti. Location de bungalow, activités et charme polynésien.">
+  <title>Fare Ninamu | Vairao, Tahiti Iti</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
   <header>
-    <h1>Fare Ninamu - Votre escapade à Vairao</h1>
-    <p>🌿 Charme polynésien & confort à Tahiti Iti 🐚</p>
+    <img src="logo.png" alt="Logo Fare Ninamu" class="logo" />
+    <h1>Fare Ninamu</h1>
+    <p>Le charme authentique de Vairao, entre mer et montagne</p>
+    <div class="lang-switch">
+      <button onclick="switchLanguage('fr')">Français</button>
+      <button onclick="switchLanguage('en')">English</button>
+    </div>
   </header>
 
-  <nav>
-    <a href="#hebergement">Hébergement</a>
-    <a href="#activites">Activités</a>
-    <a href="#restauration">Restauration</a>
-    <a href="#contact">Contact</a>
-  </nav>
+  <main>
+    <section class="highlight">
+      <h2 data-lang="fr">🌴 Offre Spéciale Long Séjour 🌴</h2>
+      <p data-lang="fr"><strong>15 000 XPF / nuit</strong> pour toute réservation de <strong>7 nuits minimum</strong>.</p>
 
-  <section id="hebergement">
-    <h2>🏡 Hébergement</h2>
-    <p>Bungalow cosy et lumineux avec 2 chambres, lit queen-size, cuisine équipée, Wi-Fi, terrasse et jardin privé. À 5 minutes de la plage Maui.</p>
-  </section>
+      <h2 data-lang="en" style="display:none">🌴 Special Long Stay Offer 🌴</h2>
+      <p data-lang="en" style="display:none"><strong>15,000 XPF / night</strong> for all bookings of <strong>7 nights minimum</strong>.</p>
+    </section>
 
-  <section id="activites">
-    <h2>🌊 Activités</h2>
-    <ul>
-      <li>Excursion à Te Pari - aventure sur la côte sauvage</li>
-      <li>Journée en mer avec Fifiri Boat - BBQ, snorkeling</li>
-      <li>Visite de la ferme perlière à Teahupoo</li>
-    </ul>
-  </section>
+    <section class="intro">
+      <div data-lang="fr">
+        <h2>🌿 Escapade détente à Vairao</h2>
+        <p>Bienvenue à Vairao, sur la côte sauvage et authentique de Tahiti Iti !</p>
+        <p>Notre bungalow tout confort vous attend pour un séjour inoubliable, entre mer turquoise, nature luxuriante et ambiance polynésienne.</p>
+        <ul>
+          <li>🛏️ 2 chambres avec lit queen size</li>
+          <li>🍳 Kitchenette</li>
+          <li>🌿 Terrasse/jardin privatif</li>
+          <li>📶 Wi-Fi gratuit</li>
+          <li>🌊 À 5 min de la plage Maui</li>
+          <li>🅿️ Parking privé</li>
+        </ul>
+        <p>• Quartier paisible et tout proche des commodités<br>• Emplacement idéal près des spots de surf légendaires</p>
+      </div>
+      <div data-lang="en" style="display:none">
+        <h2>🌿 Relaxing getaway in Vairao</h2>
+        <p>Welcome to Vairao, on the wild and authentic coast of Tahiti Iti!</p>
+        <p>Our comfortable bungalow awaits you for an unforgettable stay, between turquoise sea, lush nature and Polynesian ambiance.</p>
+        <ul>
+          <li>🛏️ 2 bedrooms with queen-size beds</li>
+          <li>🍳 Kitchenette</li>
+          <li>🌿 Private terrace/garden</li>
+          <li>📶 Free Wi-Fi</li>
+          <li>🌊 Only 5 min from Maui Beach</li>
+          <li>🅿️ Private parking</li>
+        </ul>
+        <p>• Peaceful neighborhood close to amenities<br>• Ideal location near legendary surf spots</p>
+      </div>
+    </section>
 
-  <section id="restauration">
-    <h2>🍽️ Restauration & Commodités</h2>
-    <p>Snacks Tavania & La Plage Maui à proximité. Commerces à Taravao. Roulotte Nomade pour vos envies sur roues !</p>
-  </section>
+    <section class="contact">
+      <h2>📞 Contact</h2>
+      <p>📞 +689 87 39 88 04<br>📧 fareninamuvairao@gmail.com<br>📘 FB : Fare Ninamu Vairao</p>
+    </section>
 
-  <section id="contact">
-    <h2>📞 Contact</h2>
-    <p class="contact-info">
-      +689 87 39 88 04<br>
-      fareninamuvairao@gmail.com<br>
-      Facebook : Fare Ninamu Vairao
-    </p>
-  </section>
+    <section class="blog">
+      <h2 data-lang="fr">📝 Dernier article</h2>
+      <h2 data-lang="en" style="display:none">📝 Latest blog post</h2>
+      <article>
+        <h3>3 coups de cœur autour de Vairao</h3>
+        <ul>
+          <li>🌿 Te Pari – excursion sauvage avec guide local (Tahiti Boat Excursion)</li>
+          <li>🏖️ Plage de Maui – sable blanc et lagon turquoise</li>
+          <li>🐚 Ferme perlière de Teahupoo – immersion culturelle</li>
+        </ul>
+      </article>
+    </section>
+  </main>
 
   <footer>
-    <p>&copy; 2025 Fare Ninamu - Vairao, Tahiti Iti</p>
+    <p>&copy; 2025 Fare Ninamu – Vairao, Tahiti Iti</p>
   </footer>
+
+  <script>
+    function switchLanguage(lang) {
+      document.querySelectorAll('[data-lang]').forEach(el => {
+        el.style.display = el.getAttribute('data-lang') === lang ? 'block' : 'none';
+      });
+    }
+  </script>
 </body>
 </html>
