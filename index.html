@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="google-site-verification" content="yUZGcVzcAP79q_4F0i7ne71NCpnfJKC2E1W0jXTX2nQ" />
+  <title>Fare Ninamu - Accueil</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f8fafa; }
+    header { background-color: #014d4e; color: white; display: flex; justify-content: space-between; align-items: center; padding: 10px 20px; }
+    header img.logo { height: 60px; }
+    nav ul { list-style: none; display: flex; gap: 20px; margin: 0; padding: 0; }
+    nav a { color: white; text-decoration: none; font-weight: bold; }
+    .language-switcher button { margin-left: 10px; }
+    main { padding: 20px; max-width: 900px; margin: auto; text-align: center; }
+    footer { background-color: #014d4e; color: white; text-align: center; padding: 10px; margin-top: 30px; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="assets/logo.png" alt="Logo Fare Ninamu" class="logo" />
+    <nav>
+      <ul>
+        <li><a href="index.html" class="lang-fr">Accueil</a><a href="index.html" class="lang-en hidden">Home</a></li>
+        <li><a href="hebergement.html" class="lang-fr">Hébergement</a><a href="hebergement.html" class="lang-en hidden">Lodging</a></li>
+        <li><a href="activites.html" class="lang-fr">Activités</a><a href="activites.html" class="lang-en hidden">Activities</a></li>
+        <li><a href="contact.html" class="lang-fr">Contact</a><a href="contact.html" class="lang-en hidden">Contact</a></li>
+      </ul>
+    </nav>
+    <div class="language-switcher">
+      <button onclick="setLanguage('fr')">FR</button>
+      <button onclick="setLanguage('en')">EN</button>
+    </div>
+  </header>
+
+  <main>
+    <h1 class="lang-fr">Un refuge paisible entre lagon et montagne – découvrez le cœur sauvage de Tahiti Iti.</h1>
+    <h1 class="lang-en hidden">A peaceful haven between lagoon and mountain – discover the wild heart of Tahiti Iti.</h1>
+    <p class="lang-fr">Bienvenue à Fare Ninamu – Vairao, Tahiti</p>
+    <p class="lang-en hidden">Welcome to Fare Ninamu – Vairao, Tahiti</p>
+  </main>
+
+  <footer>
+    <p>© 2025 Fare Ninamu - Vairao, Tahiti</p>
+  </footer>
+
+  <script>
+    function setLanguage(lang) {
+      document.querySelectorAll('.lang-fr').forEach(el => el.classList.toggle('hidden', lang !== 'fr'));
+      document.querySelectorAll('.lang-en').forEach(el => el.classList.toggle('hidden', lang !== 'en'));
+    }
+  </script>
+</body>
+</html>
