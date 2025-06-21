@@ -1,0 +1,80 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Hébergement - Fare Ninamu</title>
+<style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f8fafa; }
+    header, footer { background-color: #014d4e; color: white; text-align: center; padding: 10px; }
+    main { padding: 20px; max-width: 900px; margin: auto; }
+    .gallery { display: flex; flex-wrap: wrap; gap: 15px; justify-content: center; margin: 20px 0; }
+    .gallery img { width: 200px; height: auto; border-radius: 8px; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body><div class="language-switcher"><button onclick="setLanguage('fr')">FR</button><button onclick="setLanguage('en')">EN</button></div>
+<header>
+<h1 class="lang-fr">Hébergement</h1>
+<h1 class="lang-en hidden">Lodging</h1>
+</header>
+<main>
+<div class="gallery">
+<img alt="Chambre 1" src="chambre-1.jpg"/>
+<img alt="Chambre 2" src="chambre-2.jpg"/>
+<img alt="Salon Bar" src="salon-bar.jpg"/>
+<img alt="Cuisine" src="salon-cuisine.jpg"/>
+<img alt="Salle de bain" src="toilette.jpg"/>
+</div>
+<div class="lang-fr">
+<p>🏡 Un petit havre de paix entre mer et montagne<br/>
+      🛌 2 chambres confortables – lits Queen Size<br/>
+      🍽️ Cuisine équipée<br/>
+      📶 Wifi inclus<br/>
+      🧺 Linge de maison fourni<br/>
+      🚗 Parking privé (1 véhicule)<br/>
+      ❌ Animaux non acceptés<br/>
+      🏖️ À deux pas de la plage !</p>
+<hr/>
+<p>🕒 <strong>Horaires</strong><br/>• Arrivée : 14h00<br/>• Départ : 11h00</p>
+<hr/>
+<p>💸 <strong>Tarifs</strong><br/>• 18 000 XPF / nuitée (2 nuits minimum)<br/>• 15 000 XPF / nuitée (long séjour)</p>
+<hr/>
+<p>📞 <strong>Réservations &amp; infos</strong><br/>
+      📱 +689 87 39 88 04<br/>
+      📧 fareninamuvairao@gmail.com<br/>
+      📘 Facebook : Fare Ninamu Vairao</p>
+</div>
+<div class="lang-en hidden">
+<p>🏡 A peaceful haven between sea and mountains<br/>
+      🛌 2 comfortable bedrooms – Queen Size beds<br/>
+      🍽️ Equipped kitchen<br/>
+      📶 Free Wifi<br/>
+      🧺 Bed linen provided<br/>
+      🚗 Private parking (1 car)<br/>
+      ❌ Pets not allowed<br/>
+      🏖️ A few steps from the beach!</p>
+<hr/>
+<p>🕒 <strong>Check-in / Check-out</strong><br/>• Check-in: 2:00 PM<br/>• Check-out: 11:00 AM</p>
+<hr/>
+<p>💸 <strong>Rates</strong><br/>• 18,000 XPF / night (2-night minimum)<br/>• 15,000 XPF / night (long stay)</p>
+<hr/>
+<p>📞 <strong>Bookings &amp; Info</strong><br/>
+      📱 +689 87 39 88 04<br/>
+      📧 fareninamuvairao@gmail.com<br/>
+      📘 Facebook: Fare Ninamu Vairao</p>
+</div>
+</main>
+<footer>
+<p>© 2025 Fare Ninamu - Vairao, Tahiti</p>
+</footer>
+<script>
+    function setLanguage(lang) {
+      document.querySelectorAll('.lang-fr').forEach(el => el.classList.toggle('hidden', lang !== 'fr'));
+      document.querySelectorAll('.lang-en').forEach(el => el.classList.toggle('hidden', lang !== 'en'));
+    }
+  </script>
+</body>
+</html>

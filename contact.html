@@ -1,0 +1,57 @@
+
+<!DOCTYPE html>
+
+<html lang="fr">
+<head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Contact - Fare Ninamu</title>
+<style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #f8fafa; }
+    header, footer { background-color: #014d4e; color: white; text-align: center; padding: 10px; }
+    main { padding: 20px; max-width: 900px; margin: auto; }
+    iframe { border-radius: 8px; margin-top: 10px; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body><div class="language-switcher"><button onclick="setLanguage('fr')">FR</button><button onclick="setLanguage('en')">EN</button></div>
+<header>
+<h1 class="lang-fr">Contact</h1>
+<h1 class="lang-en hidden">Contact</h1>
+</header>
+<main>
+<div class="lang-fr">
+<p>📞 <strong>Réservations &amp; informations</strong></p>
+<p>📱 +689 87 39 88 04<br/>
+         📧 fareninamuvairao@gmail.com<br/>
+         📘 Facebook : Fare Ninamu Vairao</p>
+</div>
+<div class="lang-en hidden">
+<p>📞 <strong>Bookings &amp; Info</strong></p>
+<p>📱 +689 87 39 88 04<br/>
+         📧 fareninamuvairao@gmail.com<br/>
+         📘 Facebook: Fare Ninamu Vairao</p>
+</div>
+<h3>📍 Nous trouver / Find us</h3>
+<p class="lang-fr">Fare Ninamu est situé au PK 9, côté montagne, à Vairao (Tahiti Iti).</p>
+<p class="lang-en hidden">Fare Ninamu is located at PK 9, mountain side, in Vairao (Tahiti Iti).</p>
+<iframe frameborder="0" height="350" marginheight="0" marginwidth="0" scrolling="no" src="https://www.openstreetmap.org/export/embed.html?bbox=-149.3146%2C-17.8493%2C-149.3123%2C-17.8463&amp;layer=mapnik&amp;marker=-17.8479%2C-149.3134" width="100%">
+</iframe>
+<br/>
+<small>
+<a href="https://www.openstreetmap.org/?mlat=-17.8479&amp;mlon=-149.3134#map=18/-17.8479/-149.3134" rel="noopener noreferrer" target="_blank">
+        Voir sur OpenStreetMap
+      </a>
+</small>
+</main>
+<footer>
+<p>© 2025 Fare Ninamu - Vairao, Tahiti</p>
+</footer>
+<script>
+    function setLanguage(lang) {
+      document.querySelectorAll('.lang-fr').forEach(el => el.classList.toggle('hidden', lang !== 'fr'));
+      document.querySelectorAll('.lang-en').forEach(el => el.classList.toggle('hidden', lang !== 'en'));
+    }
+  </script>
+<iframe allowfullscreen="True" height="300" loading="lazy" referrerpolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3798.384987858399!2d-149.2161806857487!3d-17.82284776806267!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x77c2b2aee6a09371%3A0x9a4c5734093f3998!2sPK%209%2C%20Vairao%2C%20Tahiti!5e0!3m2!1sfr!2spf!4v1718850000000!5m2!1sfr!2spf" style="border:0;" width="100%"></iframe></body>
+</html>
