@@ -1,0 +1,49 @@
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Fare Ninamu - Accueil</title>
+  <style>
+    body { font-family: Arial, sans-serif; margin: 0; padding: 0; background-color: #fdfbf5; }
+    header, footer { background-color: #004d4d; color: white; text-align: center; padding: 10px 0; }
+    nav a { margin: 0 15px; color: white; text-decoration: none; font-weight: bold; }
+    main { padding: 20px; text-align: center; }
+    img.logo { max-width: 300px; height: auto; }
+    .language-switcher { position: absolute; top: 10px; right: 10px; }
+    .language-switcher button { margin-left: 5px; }
+    .hidden { display: none; }
+  </style>
+</head>
+<body>
+  <header>
+    <img src="logo.png" alt="Logo Fare Ninamu" class="logo"/>
+    <nav>
+      <a href="index.html" class="lang-fr">Accueil</a><a href="index.html" class="lang-en hidden">Home</a>
+      <a href="hebergement.html" class="lang-fr">Hébergement</a><a href="hebergement.html" class="lang-en hidden">Lodging</a>
+      <a href="activites.html" class="lang-fr">Activités</a><a href="activites.html" class="lang-en hidden">Activities</a>
+      <a href="contact.html" class="lang-fr">Contact</a><a href="contact.html" class="lang-en hidden">Contact</a>
+    </nav>
+    <div class="language-switcher">
+      <button onclick="setLanguage('fr')">FR</button>
+      <button onclick="setLanguage('en')">EN</button>
+    </div>
+  </header>
+  <main>
+    <h1 class="lang-fr">Un refuge paisible entre lagon et montagne – découvrez le cœur sauvage de Tahiti Iti.</h1>
+    <h1 class="lang-en hidden">A peaceful haven between lagoon and mountain – discover the wild heart of Tahiti Iti.</h1>
+    <p class="lang-fr">Bienvenue à Fare Ninamu – Vairao, Tahiti</p>
+    <p class="lang-en hidden">Welcome to Fare Ninamu – Vairao, Tahiti</p>
+  </main>
+  <footer>
+    <p>© 2025 Fare Ninamu - Vairao, Tahiti</p>
+  </footer>
+  <script>
+    function setLanguage(lang) {
+      document.querySelectorAll('.lang-fr').forEach(el => el.classList.toggle('hidden', lang !== 'fr'));
+      document.querySelectorAll('.lang-en').forEach(el => el.classList.toggle('hidden', lang !== 'en'));
+    }
+  </script>
+</body>
+</html>
